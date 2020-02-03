@@ -1,2 +1,2 @@
 # snakeway
-Projeto de RPG em modo de linha de comando.
+Projeto de RPG em interface de linha de comando.
