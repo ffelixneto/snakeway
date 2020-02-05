@@ -7,6 +7,8 @@ from capa import capa
 from asciimatics.screen import Screen
 import time
 
+from menu import menu
+
 def start():
     clear()
     texto('Snakeway é um jogo de com elemetos de RPG feito para ser jogado em linha de comando :)',2)
@@ -21,5 +23,7 @@ def start():
         clear()
         texto('Vamos começar '+ ponto3, 1)
         clear()
-    Screen.wrapper(capa)
+    # Screen.wrapper(capa)
+    # clear()
 start()
+menu()
