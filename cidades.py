@@ -1,25 +1,21 @@
 # -*- coding: utf-8 -*-
+from utils import texto_cidade
 
 def cidade_01():
-    print ' Você está indo para o Inferno das agulhas!'
-    print('_____________________________________________________________________________________')
+    texto_cidade(' Você está indo para o Inferno das agulhas!')
 
 def cidade_02():
-    print ' Você está indo para o Inferno da louça suja!'
-    print('_____________________________________________________________________________________')
+    texto_cidade(' Você está indo para o Inferno da louça suja!')
 
 def cidade_03():
-    print ' Você está indo para o Inferno das Ordens de Serviço!'
-    print('_____________________________________________________________________________________')
+    texto_cidade(' Você está indo para o Inferno das Ordens de Serviço!')
 
 def cidade_04():
-    print ' Você está indo para o Inferno do PMR!'
-    print('_____________________________________________________________________________________')
+    texto_cidade(' Você está indo para o Inferno do PMR!')
 
 def cidade_05():
-    print ' Você está indo para o Inferno da montagem de guarda-roupa!'
-    print('_____________________________________________________________________________________')
+    texto_cidade(' Você está indo para o Inferno da montagem de guarda-roupa!')
 
 def cidade_06():
-    print ' Você está indo para o Inferno do Procure direitinho!'
-    print('_____________________________________________________________________________________')
+    texto_cidade(' Você está indo para o Inferno do Procure direitinho!')
+

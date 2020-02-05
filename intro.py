@@ -11,7 +11,7 @@ from menu import menu
 
 def start():
     clear()
-    texto('Snakeway é um jogo de com elemetos de RPG feito para ser jogado em linha de comando :)',2)
+    texto('Snakeway é um jogo de com elemetos de RPG feito para ser jogado em linha de comando :)', 2)
     clear()
     ponto1 = '.'
     ponto2 = '..'

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from utils import clear
+from utils import clear, texto
 from cidades import cidade_01, cidade_02, cidade_03, cidade_04, cidade_05, cidade_06
 import time
 import random
@@ -13,9 +13,8 @@ def menu():
 
     if nome:
         clear()
-        print('_____________________________________________________________________________________')
-        print 'Bem-vindo ao jogo, ', nome
-        print('_____________________________________________________________________________________')
+        bemvindo = ('Bem-vindo ao jogo, ' + nome)
+        texto(bemvindo, 3)
 
         dado()
 
@@ -26,10 +25,7 @@ def dado():
         for i in range(0, 1):
             resultado = random.randint(1, 6)
             clear()
-            print('_____________________________________________________________________________________')
-            print resultado
-            print('_____________________________________________________________________________________')
-
+            texto(str(resultado), 2)
             if resultado == 1:
                 return cidade_01()
             elif resultado == 2:

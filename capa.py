@@ -2,7 +2,7 @@ from asciimatics.effects import Cycle, Stars
 from asciimatics.renderers import FigletText
 from asciimatics.scene import Scene
 
-import keyboard
+# import keyboard
 
 def capa(screen):
     effects = [
