@@ -1,29 +1,25 @@
 # -*- coding: utf-8 -*-
 # Arquivo que vai exibir o texto inicial ao inicialiar o jogo
 
-from utils import clear
-from utils import texto
+from utils import clear, texto
 from capa import capa
 from asciimatics.screen import Screen
 import time
 
-from menu import menu
+from menu import main_menu
 
 def start():
     clear()
-    texto('Snakeway é um jogo de com elemetos de RPG feito para ser jogado em linha de comando :)', 2)
+    texto('Snakeway - um jogo com elemetos de RPG feito para ser jogado em linha de comando :)')
     clear()
-    ponto1 = '.'
-    ponto2 = '..'
-    ponto3 = '...'
-    for i in range(1):
-        texto('Vamos começar '+ ponto1, 1)
+    t0 = 'Vamos iniciar'
+    texto(t0, 0.4)
+    for i in range(3):
         clear()
-        texto('Vamos começar '+ ponto2, 1)
-        clear()
-        texto('Vamos começar '+ ponto3, 1)
-        clear()
+        t0 += '.' 
+        texto(t0, 0.5)
+
     # Screen.wrapper(capa)
     # clear()
 start()
-menu()
+main_menu()
