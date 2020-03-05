@@ -8,12 +8,22 @@ import random
 def main_menu():
 
     nome = raw_input(str("Informe seu NickName: "))
-    classe = raw_input(str("Informe sua classe: "))
 
+    def escolhe_classe(opt):
+        switcher = {
+            "1": "Guerreiro",
+            "2": "Mago",
+            "3": "Clerigo"
+        }
+        return switcher.get(opt, "Plebeu")
+    opt_classe = raw_input(str("Escolha sua classe: \n1 - Guerreiro\n2 - Mago\n3 - Clerigo\n"))
+    classe = escolhe_classe(opt_classe)
     if nome != '':
         clear()
         bemvindo = ('Bem-vindo ao jogo, ' + nome)
         texto(bemvindo, 1)
+        suaclasse = ('Sua classe : ' + classe)
+        texto(suaclasse, 1)
 
         dado()
     else:

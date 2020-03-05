@@ -16,7 +16,7 @@ def start():
     texto(t0, 0.4)
     for i in range(3):
         clear()
-        t0 += '.' 
+        t0 += '.'
         texto(t0, 0.5)
 
     # Screen.wrapper(capa)
