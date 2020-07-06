@@ -2,8 +2,6 @@
 # Arquivo que vai exibir o texto inicial ao inicialiar o jogo
 
 from utils import clear, texto
-from capa import capa
-from asciimatics.screen import Screen
 import time
 
 from menu import main_menu
@@ -19,7 +17,6 @@ def start():
         t0 += '.'
         texto(t0, 0.5)
 
-    # Screen.wrapper(capa)
     # clear()
 start()
 main_menu()
